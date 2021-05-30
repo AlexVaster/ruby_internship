@@ -1,0 +1,22 @@
+<h1>Панель администратора</h1>
+<p id="notice"><%= notice %></p>
+<% if session[:login] %>
+  <p>Вы вошли как <strong><%= session[:login] %></strong></p>
+  <p>
+    <%= form_with(url: login_path, method: :delete) do %>
+      <%= submit_tag("Выйти") %>
+    <% end %>
+  </p>
+<% else %>
+  <%= form_with(url: "/login") do %>
+    <p>
+      <%= label_tag(:login, "Логин") %>
+      <%= text_field_tag(:login) %>
+    </p>
+    <p>
+      <%= label_tag(:login, "Пароль") %>
+      <%= password_field_tag(:password) %>
+    </p>
+    <p><%= submit_tag("Вход") %></p>
+  <% end %>
+<% end %>

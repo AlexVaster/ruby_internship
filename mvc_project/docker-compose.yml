@@ -1,0 +1,21 @@
+version: '3.8'
+services:
+  app:
+    build: .
+    command: rails server -b 0.0.0.0
+    volumes:
+      - .:/usr/src
+    ports:
+      - "3000:3000"
+    tmpfs:
+      - /app/tmp/pids
+      - /app/tmp/cache
+    depends_on:
+      - server
+  server:
+    build: server/
+    command: ruby web_server.rb
+    expose:
+      - "5678"
+    ports:
+      - "5678:5678" 

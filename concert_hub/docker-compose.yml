@@ -1,0 +1,46 @@
+version: '3'
+services:
+  postgres:
+    image: postgres:11.5
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    volumes:
+      - postgres:/var/lib/postgresql/data
+
+  log:
+    build: ./log_service
+    volumes:
+      - .:/usr/src
+    working_dir: /usr/src/log_service
+    ports:
+      - "8180:8180"
+    depends_on:
+      - postgres
+
+  turnstile:
+    build: ./turnstile_service
+    volumes:
+      - .:/usr/src
+    working_dir: /usr/src/turnstile_service
+    ports:
+      - "8190:8190"
+
+  tickets:
+    build: ./tickets_service
+    volumes:
+      - .:/usr/src
+    working_dir: /usr/src/tickets_service
+    ports:
+      - "8170:8170"
+  
+  reserve:
+    build: ./reserve_service
+    volumes:
+      - .:/usr/src
+    working_dir: /usr/src/reserve_service
+    ports:
+      - "8160:8160"
+
+volumes:
+  postgres:

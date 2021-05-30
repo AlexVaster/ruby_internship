@@ -1,0 +1,1297 @@
+Started GET "/" for 172.17.0.1 at 2021-04-14 00:07:45 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (104.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (11.5ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 1 pending migration:
+
+20210413233419_create_bronies.rb
+
+
+):
+  
+activerecord (6.1.3.1) lib/active_record/migration.rb:625:in `check_pending!'
+activerecord (6.1.3.1) lib/active_record/migration.rb:590:in `block (2 levels) in call'
+activesupport (6.1.3.1) lib/active_support/evented_file_update_checker.rb:59:in `execute'
+activerecord (6.1.3.1) lib/active_record/migration.rb:595:in `block in call'
+activerecord (6.1.3.1) lib/active_record/migration.rb:587:in `synchronize'
+activerecord (6.1.3.1) lib/active_record/migration.rb:587:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-mini-profiler (2.3.1) lib/mini_profiler/profiler.rb:373:in `call'
+railties (6.1.3.1) lib/rails/engine.rb:539:in `call'
+puma (5.2.2) lib/puma/configuration.rb:248:in `call'
+puma (5.2.2) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.2) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.2) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.2) lib/puma/server.rb:431:in `process_client'
+puma (5.2.2) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started GET "/orders?a=1&b=2" for 172.17.0.1 at 2021-04-14 00:08:59 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 1 pending migration:
+
+20210413233419_create_bronies.rb
+
+
+):
+  
+activerecord (6.1.3.1) lib/active_record/migration.rb:625:in `check_pending!'
+activerecord (6.1.3.1) lib/active_record/migration.rb:590:in `block (2 levels) in call'
+activesupport (6.1.3.1) lib/active_support/evented_file_update_checker.rb:59:in `execute'
+activerecord (6.1.3.1) lib/active_record/migration.rb:595:in `block in call'
+activerecord (6.1.3.1) lib/active_record/migration.rb:587:in `synchronize'
+activerecord (6.1.3.1) lib/active_record/migration.rb:587:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-mini-profiler (2.3.1) lib/mini_profiler/profiler.rb:373:in `call'
+railties (6.1.3.1) lib/rails/engine.rb:539:in `call'
+puma (5.2.2) lib/puma/configuration.rb:248:in `call'
+puma (5.2.2) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.2) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.2) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.2) lib/puma/server.rb:431:in `process_client'
+puma (5.2.2) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started GET "/brony/new" for 172.17.0.1 at 2021-04-14 00:09:24 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 1 pending migration:
+
+20210413233419_create_bronies.rb
+
+
+):
+  
+activerecord (6.1.3.1) lib/active_record/migration.rb:625:in `check_pending!'
+activerecord (6.1.3.1) lib/active_record/migration.rb:590:in `block (2 levels) in call'
+activesupport (6.1.3.1) lib/active_support/evented_file_update_checker.rb:59:in `execute'
+activerecord (6.1.3.1) lib/active_record/migration.rb:595:in `block in call'
+activerecord (6.1.3.1) lib/active_record/migration.rb:587:in `synchronize'
+activerecord (6.1.3.1) lib/active_record/migration.rb:587:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-mini-profiler (2.3.1) lib/mini_profiler/profiler.rb:373:in `call'
+railties (6.1.3.1) lib/rails/engine.rb:539:in `call'
+puma (5.2.2) lib/puma/configuration.rb:248:in `call'
+puma (5.2.2) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.2) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.2) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.2) lib/puma/server.rb:431:in `process_client'
+puma (5.2.2) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started GET "/brony" for 172.17.0.1 at 2021-04-14 00:10:09 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 1 pending migration:
+
+20210413233419_create_bronies.rb
+
+
+):
+  
+activerecord (6.1.3.1) lib/active_record/migration.rb:625:in `check_pending!'
+activerecord (6.1.3.1) lib/active_record/migration.rb:590:in `block (2 levels) in call'
+activesupport (6.1.3.1) lib/active_support/evented_file_update_checker.rb:59:in `execute'
+activerecord (6.1.3.1) lib/active_record/migration.rb:595:in `block in call'
+activerecord (6.1.3.1) lib/active_record/migration.rb:587:in `synchronize'
+activerecord (6.1.3.1) lib/active_record/migration.rb:587:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-mini-profiler (2.3.1) lib/mini_profiler/profiler.rb:373:in `call'
+railties (6.1.3.1) lib/rails/engine.rb:539:in `call'
+puma (5.2.2) lib/puma/configuration.rb:248:in `call'
+puma (5.2.2) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.2) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.2) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.2) lib/puma/server.rb:431:in `process_client'
+puma (5.2.2) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateBronies (20210413233419)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "bronies" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "id_ticket" integer, "number_brony" integer, "time_broby" time, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+Started GET "/brony" for 172.17.0.1 at 2021-04-14 00:11:11 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 1 pending migration:
+
+20210413233419_create_bronies.rb
+
+
+):
+  
+activerecord (6.1.3.1) lib/active_record/migration.rb:625:in `check_pending!'
+activerecord (6.1.3.1) lib/active_record/migration.rb:590:in `block (2 levels) in call'
+activesupport (6.1.3.1) lib/active_support/evented_file_update_checker.rb:59:in `execute'
+activerecord (6.1.3.1) lib/active_record/migration.rb:595:in `block in call'
+activerecord (6.1.3.1) lib/active_record/migration.rb:587:in `synchronize'
+activerecord (6.1.3.1) lib/active_record/migration.rb:587:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-mini-profiler (2.3.1) lib/mini_profiler/profiler.rb:373:in `call'
+railties (6.1.3.1) lib/rails/engine.rb:539:in `call'
+puma (5.2.2) lib/puma/configuration.rb:248:in `call'
+puma (5.2.2) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.2) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.2) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.2) lib/puma/server.rb:431:in `process_client'
+puma (5.2.2) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started GET "/brony" for 172.17.0.1 at 2021-04-14 00:11:14 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 1 pending migration:
+
+20210413233419_create_bronies.rb
+
+
+):
+  
+activerecord (6.1.3.1) lib/active_record/migration.rb:625:in `check_pending!'
+activerecord (6.1.3.1) lib/active_record/migration.rb:590:in `block (2 levels) in call'
+activesupport (6.1.3.1) lib/active_support/evented_file_update_checker.rb:59:in `execute'
+activerecord (6.1.3.1) lib/active_record/migration.rb:595:in `block in call'
+activerecord (6.1.3.1) lib/active_record/migration.rb:587:in `synchronize'
+activerecord (6.1.3.1) lib/active_record/migration.rb:587:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-mini-profiler (2.3.1) lib/mini_profiler/profiler.rb:373:in `call'
+railties (6.1.3.1) lib/rails/engine.rb:539:in `call'
+puma (5.2.2) lib/puma/configuration.rb:248:in `call'
+puma (5.2.2) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.2) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.2) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.2) lib/puma/server.rb:431:in `process_client'
+puma (5.2.2) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started GET "/brony" for 172.17.0.1 at 2021-04-14 00:11:21 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 1 pending migration:
+
+20210413233419_create_bronies.rb
+
+
+):
+  
+activerecord (6.1.3.1) lib/active_record/migration.rb:625:in `check_pending!'
+activerecord (6.1.3.1) lib/active_record/migration.rb:590:in `block (2 levels) in call'
+activesupport (6.1.3.1) lib/active_support/evented_file_update_checker.rb:59:in `execute'
+activerecord (6.1.3.1) lib/active_record/migration.rb:595:in `block in call'
+activerecord (6.1.3.1) lib/active_record/migration.rb:587:in `synchronize'
+activerecord (6.1.3.1) lib/active_record/migration.rb:587:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-mini-profiler (2.3.1) lib/mini_profiler/profiler.rb:373:in `call'
+railties (6.1.3.1) lib/rails/engine.rb:539:in `call'
+puma (5.2.2) lib/puma/configuration.rb:248:in `call'
+puma (5.2.2) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.2) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.2) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.2) lib/puma/server.rb:431:in `process_client'
+puma (5.2.2) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started POST "/rails/actions" for 172.17.0.1 at 2021-04-14 00:11:24 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateBronies (20210413233419)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "bronies" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "id_ticket" integer, "number_brony" integer, "time_broby" time, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210413233419"]]
+  [1m[36mTRANSACTION (69.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (19.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-04-14 00:11:24.790345"], ["updated_at", "2021-04-14 00:11:24.790345"]]
+  [1m[36mTRANSACTION (9.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/brony" for 172.17.0.1 at 2021-04-14 00:11:24 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/brony"):
+  
+Started GET "/brony" for 172.17.0.1 at 2021-04-14 00:11:29 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/brony"):
+  
+Started GET "/brony/new" for 172.17.0.1 at 2021-04-14 00:11:37 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/brony/new"):
+  
+Started GET "/bronies/new" for 172.17.0.1 at 2021-04-14 00:11:57 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BroniesController#new as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/bronies_controller.rb:15:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering bronies/new.html.erb within layouts/application
+  Rendered bronies/_form.html.erb (Duration: 38.7ms | Allocations: 8206)
+  Rendered bronies/new.html.erb within layouts/application (Duration: 40.8ms | Allocations: 8566)
+  Rendered layout layouts/application.html.erb (Duration: 83.1ms | Allocations: 25185)
+Completed 200 OK in 110ms (Views: 89.9ms | ActiveRecord: 0.7ms | Allocations: 32258)
+
+
+Started GET "/bronies/new" for 172.17.0.1 at 2021-04-14 01:36:39 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BroniesController#new as HTML
+  [1m[36mBrony Load (0.1ms)[0m  [1m[34mSELECT "bronies".* FROM "bronies" ORDER BY "bronies"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/bronies_controller.rb:15:in `new'
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 2.1ms | Allocations: 2954)
+
+
+  
+NoMethodError (private method `select' called for nil:NilClass):
+  
+app/controllers/bronies_controller.rb:15:in `new'
+Started GET "/bronies/new" for 172.17.0.1 at 2021-04-14 01:37:52 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BroniesController#new as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/bronies_controller.rb:15:in `new'
+  [1m[36mBrony Load (0.1ms)[0m  [1m[34mSELECT "bronies".* FROM "bronies" ORDER BY "bronies"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/bronies_controller.rb:15:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering bronies/new.html.erb within layouts/application
+  Rendered bronies/_form.html.erb (Duration: 13.2ms | Allocations: 6725)
+  Rendered bronies/new.html.erb within layouts/application (Duration: 15.1ms | Allocations: 7093)
+  Rendered layout layouts/application.html.erb (Duration: 26.4ms | Allocations: 11015)
+Completed 200 OK in 56ms (Views: 37.2ms | ActiveRecord: 0.9ms | Allocations: 18209)
+
+
+Started GET "/bronies/new" for 172.17.0.1 at 2021-04-14 01:39:16 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BroniesController#new as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/bronies_controller.rb:15:in `new'
+  [1m[36mBrony Load (0.1ms)[0m  [1m[34mSELECT "bronies".* FROM "bronies" ORDER BY "bronies"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/bronies_controller.rb:15:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering bronies/new.html.erb within layouts/application
+  Rendered bronies/_form.html.erb (Duration: 3.0ms | Allocations: 2176)
+  Rendered bronies/new.html.erb within layouts/application (Duration: 9.0ms | Allocations: 2290)
+  Rendered layout layouts/application.html.erb (Duration: 14.8ms | Allocations: 3724)
+Completed 200 OK in 51ms (Views: 22.9ms | ActiveRecord: 0.9ms | Allocations: 9229)
+
+
+Started GET "/bronies/new" for 172.17.0.1 at 2021-04-14 01:39:19 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BroniesController#new as HTML
+  [1m[36mBrony Load (0.1ms)[0m  [1m[34mSELECT "bronies".* FROM "bronies" ORDER BY "bronies"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/bronies_controller.rb:15:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering bronies/new.html.erb within layouts/application
+  Rendered bronies/_form.html.erb (Duration: 11.1ms | Allocations: 2082)
+  Rendered bronies/new.html.erb within layouts/application (Duration: 11.6ms | Allocations: 2195)
+  Rendered layout layouts/application.html.erb (Duration: 14.8ms | Allocations: 3627)
+Completed 200 OK in 20ms (Views: 17.7ms | ActiveRecord: 0.1ms | Allocations: 4636)
+
+
+Started GET "/bronies/new" for 172.17.0.1 at 2021-04-14 01:39:28 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BroniesController#new as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/bronies_controller.rb:15:in `new'
+  [1m[36mBrony Load (0.1ms)[0m  [1m[34mSELECT "bronies".* FROM "bronies" ORDER BY "bronies"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/bronies_controller.rb:15:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering bronies/new.html.erb within layouts/application
+  Rendered bronies/_form.html.erb (Duration: 2.0ms | Allocations: 2148)
+  Rendered bronies/new.html.erb within layouts/application (Duration: 6.4ms | Allocations: 2262)
+  Rendered layout layouts/application.html.erb (Duration: 9.3ms | Allocations: 3693)
+Completed 200 OK in 28ms (Views: 14.3ms | ActiveRecord: 0.8ms | Allocations: 9130)
+
+
+Started GET "/bronies/new" for 172.17.0.1 at 2021-04-14 01:39:40 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BroniesController#new as HTML
+  [1m[36mBrony Load (0.1ms)[0m  [1m[34mSELECT "bronies".* FROM "bronies" ORDER BY "bronies"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/bronies_controller.rb:15:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering bronies/new.html.erb within layouts/application
+  Rendered bronies/_form.html.erb (Duration: 8.7ms | Allocations: 6836)
+  Rendered bronies/new.html.erb within layouts/application (Duration: 23.5ms | Allocations: 7319)
+  Rendered layout layouts/application.html.erb (Duration: 38.8ms | Allocations: 11237)
+Completed 200 OK in 67ms (Views: 45.9ms | ActiveRecord: 0.6ms | Allocations: 18936)
+
+
+Started GET "/bronies/new" for 172.17.0.1 at 2021-04-14 01:39:41 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BroniesController#new as HTML
+  [1m[36mBrony Load (0.1ms)[0m  [1m[34mSELECT "bronies".* FROM "bronies" ORDER BY "bronies"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/bronies_controller.rb:15:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering bronies/new.html.erb within layouts/application
+  Rendered bronies/_form.html.erb (Duration: 4.0ms | Allocations: 2088)
+  Rendered bronies/new.html.erb within layouts/application (Duration: 7.9ms | Allocations: 2202)
+  Rendered layout layouts/application.html.erb (Duration: 14.7ms | Allocations: 3634)
+Completed 200 OK in 24ms (Views: 18.9ms | ActiveRecord: 0.1ms | Allocations: 4644)
+
+
+Started GET "/bronies/new" for 172.17.0.1 at 2021-04-14 01:39:58 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BroniesController#new as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/bronies_controller.rb:15:in `new'
+  [1m[36mBrony Load (0.1ms)[0m  [1m[34mSELECT "bronies".* FROM "bronies" ORDER BY "bronies"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/bronies_controller.rb:15:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering bronies/new.html.erb within layouts/application
+  Rendered bronies/_form.html.erb (Duration: 6.3ms | Allocations: 2134)
+  Rendered bronies/new.html.erb within layouts/application (Duration: 9.7ms | Allocations: 2248)
+  Rendered layout layouts/application.html.erb (Duration: 11.9ms | Allocations: 3682)
+Completed 200 OK in 38ms (Views: 20.3ms | ActiveRecord: 0.9ms | Allocations: 9311)
+
+
+Started GET "/bronies/new" for 172.17.0.1 at 2021-04-14 01:39:59 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BroniesController#new as HTML
+  [1m[36mBrony Load (0.1ms)[0m  [1m[34mSELECT "bronies".* FROM "bronies" ORDER BY "bronies"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/bronies_controller.rb:15:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering bronies/new.html.erb within layouts/application
+  Rendered bronies/_form.html.erb (Duration: 1.8ms | Allocations: 2066)
+  Rendered bronies/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 2179)
+  Rendered layout layouts/application.html.erb (Duration: 3.2ms | Allocations: 3611)
+Completed 200 OK in 5ms (Views: 3.5ms | ActiveRecord: 0.1ms | Allocations: 4616)
+
+
+Started GET "/bronies/new" for 172.17.0.1 at 2021-04-14 01:40:04 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BroniesController#new as HTML
+  [1m[36mBrony Load (0.1ms)[0m  [1m[34mSELECT "bronies".* FROM "bronies" ORDER BY "bronies"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/bronies_controller.rb:15:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering bronies/new.html.erb within layouts/application
+  Rendered bronies/_form.html.erb (Duration: 2.6ms | Allocations: 2066)
+  Rendered bronies/new.html.erb within layouts/application (Duration: 6.3ms | Allocations: 2179)
+  Rendered layout layouts/application.html.erb (Duration: 8.3ms | Allocations: 3611)
+Completed 200 OK in 14ms (Views: 11.2ms | ActiveRecord: 0.1ms | Allocations: 4616)
+
+
+Started GET "/bronies/new" for 172.17.0.1 at 2021-04-14 01:40:21 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BroniesController#new as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/bronies_controller.rb:15:in `new'
+  [1m[36mBrony Load (0.1ms)[0m  [1m[34mSELECT "bronies".* FROM "bronies" ORDER BY "bronies"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/bronies_controller.rb:15:in `new'
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.9ms | Allocations: 5546)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'time_brony' for Brony.):
+  
+app/controllers/bronies_controller.rb:20:in `new'
+Started GET "/bronies/new" for 172.17.0.1 at 2021-04-14 01:41:14 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BroniesController#new as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/bronies_controller.rb:15:in `new'
+  [1m[36mBrony Load (0.1ms)[0m  [1m[34mSELECT "bronies".* FROM "bronies" ORDER BY "bronies"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/bronies_controller.rb:15:in `new'
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.8ms | Allocations: 5791)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'time_brony' for Brony.):
+  
+app/controllers/bronies_controller.rb:20:in `new'
+Started GET "/bronies/new" for 172.17.0.1 at 2021-04-14 01:41:39 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BroniesController#new as HTML
+  [1m[36mBrony Load (0.1ms)[0m  [1m[34mSELECT "bronies".* FROM "bronies" ORDER BY "bronies"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/bronies_controller.rb:15:in `new'
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.6ms | Allocations: 6484)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'time_brony' for Brony.):
+  
+app/controllers/bronies_controller.rb:20:in `new'
+Started GET "/bronies/new" for 172.17.0.1 at 2021-04-14 01:42:34 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BroniesController#new as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/bronies_controller.rb:15:in `new'
+  [1m[36mBrony Load (0.1ms)[0m  [1m[34mSELECT "bronies".* FROM "bronies" ORDER BY "bronies"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/bronies_controller.rb:15:in `new'
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 8.5ms | Allocations: 5812)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'time_brony' for Brony.):
+  
+app/controllers/bronies_controller.rb:20:in `new'
+Started GET "/bronies/new" for 172.17.0.1 at 2021-04-14 01:42:35 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BroniesController#new as HTML
+  [1m[36mBrony Load (0.1ms)[0m  [1m[34mSELECT "bronies".* FROM "bronies" ORDER BY "bronies"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/bronies_controller.rb:15:in `new'
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.1ms | Allocations: 1187)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'time_brony' for Brony.):
+  
+app/controllers/bronies_controller.rb:20:in `new'
+Started GET "/bronies/new" for 172.17.0.1 at 2021-04-14 01:43:15 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BroniesController#new as HTML
+  [1m[36mBrony Load (0.1ms)[0m  [1m[34mSELECT "bronies".* FROM "bronies" ORDER BY "bronies"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/bronies_controller.rb:15:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering bronies/new.html.erb within layouts/application
+  Rendered bronies/_form.html.erb (Duration: 18.7ms | Allocations: 6796)
+  Rendered bronies/new.html.erb within layouts/application (Duration: 20.5ms | Allocations: 7279)
+  Rendered layout layouts/application.html.erb (Duration: 32.8ms | Allocations: 11197)
+Completed 200 OK in 64ms (Views: 42.4ms | ActiveRecord: 0.6ms | Allocations: 18892)
+
+
+Started GET "/bronies/new" for 172.17.0.1 at 2021-04-14 01:43:24 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BroniesController#new as HTML
+  [1m[36mBrony Load (0.1ms)[0m  [1m[34mSELECT "bronies".* FROM "bronies" ORDER BY "bronies"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/bronies_controller.rb:15:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering bronies/new.html.erb within layouts/application
+  Rendered bronies/_form.html.erb (Duration: 3.2ms | Allocations: 2072)
+  Rendered bronies/new.html.erb within layouts/application (Duration: 5.4ms | Allocations: 2186)
+  Rendered layout layouts/application.html.erb (Duration: 12.8ms | Allocations: 3618)
+Completed 200 OK in 20ms (Views: 14.5ms | ActiveRecord: 0.1ms | Allocations: 4624)
+
+
+Started GET "/bronies/new" for 172.17.0.1 at 2021-04-14 01:44:34 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BroniesController#new as HTML
+  [1m[36mBrony Load (6.2ms)[0m  [1m[34mSELECT "bronies".* FROM "bronies" ORDER BY "bronies"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/bronies_controller.rb:15:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering bronies/new.html.erb within layouts/application
+  Rendered bronies/_form.html.erb (Duration: 97.5ms | Allocations: 6779)
+  Rendered bronies/new.html.erb within layouts/application (Duration: 99.7ms | Allocations: 7262)
+  Rendered layout layouts/application.html.erb (Duration: 170.1ms | Allocations: 11181)
+Completed 200 OK in 278ms (Views: 171.8ms | ActiveRecord: 6.8ms | Allocations: 18877)
+
+
+Started GET "/bronies/new" for 172.17.0.1 at 2021-04-14 01:44:36 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BroniesController#new as HTML
+  [1m[36mBrony Load (0.1ms)[0m  [1m[34mSELECT "bronies".* FROM "bronies" ORDER BY "bronies"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/bronies_controller.rb:15:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering bronies/new.html.erb within layouts/application
+  Rendered bronies/_form.html.erb (Duration: 9.1ms | Allocations: 2058)
+  Rendered bronies/new.html.erb within layouts/application (Duration: 10.8ms | Allocations: 2172)
+  Rendered layout layouts/application.html.erb (Duration: 12.9ms | Allocations: 3604)
+Completed 200 OK in 21ms (Views: 16.8ms | ActiveRecord: 0.1ms | Allocations: 4611)
+
+
+Started GET "/bronies/new" for 172.17.0.1 at 2021-04-14 01:48:51 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BroniesController#new as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/bronies_controller.rb:15:in `new'
+  [1m[36mBrony Load (0.2ms)[0m  [1m[34mSELECT "bronies".* FROM "bronies" ORDER BY "bronies"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/bronies_controller.rb:15:in `new'
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 1.2ms | Allocations: 3884)
+
+
+  
+NameError (uninitialized constant BroniesController::TimeZone
+Did you mean?  Timeout):
+  
+app/controllers/bronies_controller.rb:20:in `new'
+Started GET "/bronies/new" for 172.17.0.1 at 2021-04-14 01:49:43 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BroniesController#new as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/bronies_controller.rb:15:in `new'
+  [1m[36mBrony Load (0.1ms)[0m  [1m[34mSELECT "bronies".* FROM "bronies" ORDER BY "bronies"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/bronies_controller.rb:15:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering bronies/new.html.erb within layouts/application
+  Rendered bronies/_form.html.erb (Duration: 2.6ms | Allocations: 2241)
+  Rendered bronies/new.html.erb within layouts/application (Duration: 5.4ms | Allocations: 2359)
+  Rendered layout layouts/application.html.erb (Duration: 11.7ms | Allocations: 3895)
+Completed 200 OK in 40ms (Views: 17.4ms | ActiveRecord: 1.2ms | Allocations: 9819)
+
+
+Started GET "/bronies/1" for 172.17.0.1 at 2021-04-14 01:55:03 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BroniesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/bronies_controller.rb:67:in `set_brony'
+  [1m[36mBrony Load (0.1ms)[0m  [1m[34mSELECT "bronies".* FROM "bronies" WHERE "bronies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bronies_controller.rb:67:in `set_brony'
+Completed 404 Not Found in 15ms (ActiveRecord: 0.9ms | Allocations: 3094)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Brony with 'id'=1):
+  
+app/controllers/bronies_controller.rb:67:in `set_brony'
+Started GET "/bronies/1" for 172.17.0.1 at 2021-04-14 10:21:31 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BroniesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBrony Load (0.1ms)[0m  [1m[34mSELECT "bronies".* FROM "bronies" WHERE "bronies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bronies_controller.rb:68:in `set_brony'
+Completed 404 Not Found in 96ms (ActiveRecord: 0.6ms | Allocations: 3291)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Brony with 'id'=1):
+  
+app/controllers/bronies_controller.rb:68:in `set_brony'
+Started GET "/" for 172.17.0.1 at 2021-04-14 10:21:38 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/bundle/gems/railties-6.1.3.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/bundle/gems/railties-6.1.3.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 3.1ms | Allocations: 225)
+Completed 200 OK in 11ms (Views: 10.0ms | ActiveRecord: 0.0ms | Allocations: 969)
+
+
+Started GET "/bronies/new" for 172.17.0.1 at 2021-04-14 11:02:31 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BroniesController#new as HTML
+  [1m[36mBrony Load (0.2ms)[0m  [1m[34mSELECT "bronies".* FROM "bronies" ORDER BY "bronies"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/bronies_controller.rb:15:in `new'
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.5ms | Allocations: 2952)
+
+
+  
+NoMethodError (undefined method `get_s' for nil:NilClass):
+  
+app/controllers/bronies_controller.rb:20:in `new'
+Started GET "/" for 172.18.0.1 at 2021-04-14 12:15:35 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (6.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/bundle/gems/railties-6.1.3.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/bundle/gems/railties-6.1.3.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 6.0ms | Allocations: 504)
+Completed 200 OK in 37ms (Views: 11.7ms | ActiveRecord: 0.0ms | Allocations: 4179)
+
+
+Started GET "/new" for 172.18.0.1 at 2021-04-14 12:15:40 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/new"):
+  
+Started GET "/bronies/new" for 172.18.0.1 at 2021-04-14 12:15:52 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BroniesController#new as HTML
+  [1m[36mBrony Load (0.1ms)[0m  [1m[34mSELECT "bronies".* FROM "bronies" ORDER BY "bronies"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/bronies_controller.rb:15:in `new'
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.4ms | Allocations: 2374)
+
+
+  
+NoMethodError (undefined method `get_s' for nil:NilClass):
+  
+app/controllers/bronies_controller.rb:20:in `new'
+Started GET "/bronies/new" for 172.18.0.1 at 2021-04-14 13:19:04 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (31.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+SyntaxError (/usr/src/reserve_service/app/controllers/bronies_controller.rb:61: syntax error, unexpected end
+  end
+  ^~~
+/usr/src/reserve_service/app/controllers/bronies_controller.rb:95: syntax error, unexpected end-of-input, expecting end):
+  
+app/controllers/bronies_controller.rb:61: syntax error, unexpected end
+app/controllers/bronies_controller.rb:95: syntax error, unexpected end-of-input, expecting end
+app/controllers/bronies_controller.rb:61: syntax error, unexpected end
+app/controllers/bronies_controller.rb:95: syntax error, unexpected end-of-input, expecting end
+app/controllers/bronies_controller.rb:61: syntax error, unexpected end
+app/controllers/bronies_controller.rb:95: syntax error, unexpected end-of-input, expecting end
+Started GET "/bronies/new" for 172.18.0.1 at 2021-04-14 13:21:15 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BroniesController#new as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/bronies_controller.rb:26:in `new'
+  [1m[36mBrony Load (0.1ms)[0m  [1m[34mSELECT "bronies".* FROM "bronies" ORDER BY "bronies"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/bronies_controller.rb:26:in `new'
+Completed 500 Internal Server Error in 50ms (ActiveRecord: 0.6ms | Allocations: 3933)
+
+
+  
+NoMethodError (undefined method `get_id' for nil:NilClass):
+  
+app/controllers/bronies_controller.rb:31:in `new'
+Started GET "/bronies/new" for 172.18.0.1 at 2021-04-14 13:21:46 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BroniesController#new as HTML
+  [1m[36mBrony Load (0.1ms)[0m  [1m[34mSELECT "bronies".* FROM "bronies" ORDER BY "bronies"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/bronies_controller.rb:26:in `new'
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.4ms | Allocations: 2958)
+
+
+  
+NoMethodError (undefined method `get_id' for nil:NilClass):
+  
+app/controllers/bronies_controller.rb:31:in `new'
+Started GET "/bronies/new" for 172.18.0.1 at 2021-04-14 13:22:51 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BroniesController#new as HTML
+  [1m[36mBrony Load (0.1ms)[0m  [1m[34mSELECT "bronies".* FROM "bronies" ORDER BY "bronies"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/bronies_controller.rb:19:in `new'
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.3ms | Allocations: 3024)
+
+
+  
+NoMethodError (undefined method `get_id' for nil:NilClass):
+  
+app/controllers/bronies_controller.rb:24:in `new'
+Started GET "/bronies/new" for 172.18.0.1 at 2021-04-14 13:22:52 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BroniesController#new as HTML
+  [1m[36mBrony Load (0.1ms)[0m  [1m[34mSELECT "bronies".* FROM "bronies" ORDER BY "bronies"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/bronies_controller.rb:19:in `new'
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.1ms | Allocations: 1651)
+
+
+  
+NoMethodError (undefined method `get_id' for nil:NilClass):
+  
+app/controllers/bronies_controller.rb:24:in `new'
+Started GET "/bronies/new" for 172.18.0.1 at 2021-04-14 13:25:24 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BroniesController#new as HTML
+  [1m[36mBrony Load (0.1ms)[0m  [1m[34mSELECT "bronies".* FROM "bronies" ORDER BY "bronies"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/bronies_controller.rb:19:in `new'
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 0.4ms | Allocations: 5485)
+
+
+  
+NoMethodError (undefined method `get_id' for #<Class:0x00007f80c883afe0>):
+  
+app/controllers/bronies_controller.rb:24:in `new'
+Started GET "/bronies/new" for 172.18.0.1 at 2021-04-14 13:27:31 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BroniesController#new as HTML
+  [1m[36mBrony Load (0.1ms)[0m  [1m[34mSELECT "bronies".* FROM "bronies" ORDER BY "bronies"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/bronies_controller.rb:26:in `new'
+Completed 500 Internal Server Error in 74ms (ActiveRecord: 0.3ms | Allocations: 14626)
+
+
+  
+Errno::EADDRNOTAVAIL (Failed to open TCP connection to localhost:8160 (Cannot assign requested address - connect(2) for "localhost" port 8160)):
+  
+app/controllers/bronies_controller.rb:19:in `get_id'
+app/controllers/bronies_controller.rb:31:in `new'
+Started GET "/bronies/new" for 172.18.0.1 at 2021-04-14 13:29:36 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BroniesController#new as HTML
+  [1m[36mBrony Load (0.2ms)[0m  [1m[34mSELECT "bronies".* FROM "bronies" ORDER BY "bronies"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/bronies_controller.rb:26:in `new'
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 0.4ms | Allocations: 5198)
+
+
+  
+NoMethodError (undefined method `random' for #<BroniesController:0x00564c0cfe79d8>
+Did you mean?  rand):
+  
+app/controllers/bronies_controller.rb:20:in `get_id'
+app/controllers/bronies_controller.rb:31:in `new'
+Started GET "/bronies/new" for 172.18.0.1 at 2021-04-14 13:30:25 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BroniesController#new as HTML
+  [1m[36mBrony Load (0.1ms)[0m  [1m[34mSELECT "bronies".* FROM "bronies" ORDER BY "bronies"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/bronies_controller.rb:26:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering bronies/new.html.erb within layouts/application
+  Rendered bronies/_form.html.erb (Duration: 36.1ms | Allocations: 8491)
+  Rendered bronies/new.html.erb within layouts/application (Duration: 44.8ms | Allocations: 8978)
+  Rendered layout layouts/application.html.erb (Duration: 60.0ms | Allocations: 12912)
+Completed 200 OK in 103ms (Views: 61.9ms | ActiveRecord: 0.6ms | Allocations: 21633)
+
+
+Started GET "/bronies/new" for 172.18.0.1 at 2021-04-14 13:31:59 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+SyntaxError (/usr/src/reserve_service/app/controllers/bronies_controller.rb:32: syntax error, unexpected ':', expecting ')'
+...y.new(:id_ticket => @id_bilet :number_brony => @num, :time_b...
+...                              ^
+/usr/src/reserve_service/app/controllers/bronies_controller.rb:32: syntax error, unexpected =>, expecting '.' or &. or :: or '['
+...r_brony => @num, :time_broby => Time.now)
+...                             ^~
+/usr/src/reserve_service/app/controllers/bronies_controller.rb:32: syntax error, unexpected ')', expecting end
+... @num, :time_broby => Time.now)
+...                              ^
+/usr/src/reserve_service/app/controllers/bronies_controller.rb:48: syntax error, unexpected ':', expecting ')'
+...y.new(:id_ticket => @id_bilet :number_brony => @num, :time_b...
+...                              ^
+/usr/src/reserve_service/app/controllers/bronies_controller.rb:48: syntax error, unexpected =>, expecting '.' or &. or :: or '['
+...r_brony => @num, :time_broby => Time.now)
+...                             ^~
+/usr/src/reserve_service/app/controllers/bronies_controller.rb:48: syntax error, unexpected ')', expecting end
+... @num, :time_broby => Time.now)
+...                              ^
+/usr/src/reserve_service/app/controllers/bronies_controller.rb:95: syntax error, unexpected end-of-input, expecting end):
+  
+app/controllers/bronies_controller.rb:32: syntax error, unexpected ':', expecting ')'
+app/controllers/bronies_controller.rb:32: syntax error, unexpected =>, expecting '.' or &. or :: or '['
+app/controllers/bronies_controller.rb:32: syntax error, unexpected ')', expecting end
+app/controllers/bronies_controller.rb:48: syntax error, unexpected ':', expecting ')'
+app/controllers/bronies_controller.rb:48: syntax error, unexpected =>, expecting '.' or &. or :: or '['
+app/controllers/bronies_controller.rb:48: syntax error, unexpected ')', expecting end
+app/controllers/bronies_controller.rb:95: syntax error, unexpected end-of-input, expecting end
+app/controllers/bronies_controller.rb:32: syntax error, unexpected ':', expecting ')'
+app/controllers/bronies_controller.rb:32: syntax error, unexpected =>, expecting '.' or &. or :: or '['
+app/controllers/bronies_controller.rb:32: syntax error, unexpected ')', expecting end
+app/controllers/bronies_controller.rb:48: syntax error, unexpected ':', expecting ')'
+app/controllers/bronies_controller.rb:48: syntax error, unexpected =>, expecting '.' or &. or :: or '['
+app/controllers/bronies_controller.rb:48: syntax error, unexpected ')', expecting end
+app/controllers/bronies_controller.rb:95: syntax error, unexpected end-of-input, expecting end
+app/controllers/bronies_controller.rb:32: syntax error, unexpected ':', expecting ')'
+app/controllers/bronies_controller.rb:32: syntax error, unexpected =>, expecting '.' or &. or :: or '['
+app/controllers/bronies_controller.rb:32: syntax error, unexpected ')', expecting end
+app/controllers/bronies_controller.rb:48: syntax error, unexpected ':', expecting ')'
+app/controllers/bronies_controller.rb:48: syntax error, unexpected =>, expecting '.' or &. or :: or '['
+app/controllers/bronies_controller.rb:48: syntax error, unexpected ')', expecting end
+app/controllers/bronies_controller.rb:95: syntax error, unexpected end-of-input, expecting end
+Started GET "/bronies/new" for 172.18.0.1 at 2021-04-14 13:37:23 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (5.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+SyntaxError (/usr/src/reserve_service/app/controllers/bronies_controller.rb:32: syntax error, unexpected ':', expecting ')'
+...y.new(:id_ticket => @id_bilet :number_brony => @num, :time_b...
+...                              ^
+/usr/src/reserve_service/app/controllers/bronies_controller.rb:32: syntax error, unexpected =>, expecting '.' or &. or :: or '['
+...r_brony => @num, :time_broby => Time.now)
+...                             ^~
+/usr/src/reserve_service/app/controllers/bronies_controller.rb:32: syntax error, unexpected ')', expecting end
+... @num, :time_broby => Time.now)
+...                              ^
+/usr/src/reserve_service/app/controllers/bronies_controller.rb:95: syntax error, unexpected end-of-input, expecting end):
+  
+app/controllers/bronies_controller.rb:32: syntax error, unexpected ':', expecting ')'
+app/controllers/bronies_controller.rb:32: syntax error, unexpected =>, expecting '.' or &. or :: or '['
+app/controllers/bronies_controller.rb:32: syntax error, unexpected ')', expecting end
+app/controllers/bronies_controller.rb:95: syntax error, unexpected end-of-input, expecting end
+app/controllers/bronies_controller.rb:32: syntax error, unexpected ':', expecting ')'
+app/controllers/bronies_controller.rb:32: syntax error, unexpected =>, expecting '.' or &. or :: or '['
+app/controllers/bronies_controller.rb:32: syntax error, unexpected ')', expecting end
+app/controllers/bronies_controller.rb:95: syntax error, unexpected end-of-input, expecting end
+app/controllers/bronies_controller.rb:32: syntax error, unexpected ':', expecting ')'
+app/controllers/bronies_controller.rb:32: syntax error, unexpected =>, expecting '.' or &. or :: or '['
+app/controllers/bronies_controller.rb:32: syntax error, unexpected ')', expecting end
+app/controllers/bronies_controller.rb:95: syntax error, unexpected end-of-input, expecting end
+Started GET "/bronies/new" for 172.18.0.1 at 2021-04-14 13:37:43 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+SyntaxError (/usr/src/reserve_service/app/controllers/bronies_controller.rb:32: syntax error, unexpected ':', expecting ')'
+...y.new(:id_ticket => @id_bilet :number_brony => @num, :time_b...
+...                              ^
+/usr/src/reserve_service/app/controllers/bronies_controller.rb:32: syntax error, unexpected =>, expecting '.' or &. or :: or '['
+...r_brony => @num, :time_broby => Time.now)
+...                             ^~
+/usr/src/reserve_service/app/controllers/bronies_controller.rb:32: syntax error, unexpected ')', expecting end
+... @num, :time_broby => Time.now)
+...                              ^
+/usr/src/reserve_service/app/controllers/bronies_controller.rb:95: syntax error, unexpected end-of-input, expecting end):
+  
+app/controllers/bronies_controller.rb:32: syntax error, unexpected ':', expecting ')'
+app/controllers/bronies_controller.rb:32: syntax error, unexpected =>, expecting '.' or &. or :: or '['
+app/controllers/bronies_controller.rb:32: syntax error, unexpected ')', expecting end
+app/controllers/bronies_controller.rb:95: syntax error, unexpected end-of-input, expecting end
+app/controllers/bronies_controller.rb:32: syntax error, unexpected ':', expecting ')'
+app/controllers/bronies_controller.rb:32: syntax error, unexpected =>, expecting '.' or &. or :: or '['
+app/controllers/bronies_controller.rb:32: syntax error, unexpected ')', expecting end
+app/controllers/bronies_controller.rb:95: syntax error, unexpected end-of-input, expecting end
+app/controllers/bronies_controller.rb:32: syntax error, unexpected ':', expecting ')'
+app/controllers/bronies_controller.rb:32: syntax error, unexpected =>, expecting '.' or &. or :: or '['
+app/controllers/bronies_controller.rb:32: syntax error, unexpected ')', expecting end
+app/controllers/bronies_controller.rb:95: syntax error, unexpected end-of-input, expecting end
+Started GET "/bronies/new" for 172.18.0.1 at 2021-04-14 13:38:05 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BroniesController#new as HTML
+  [1m[36mBrony Load (0.2ms)[0m  [1m[34mSELECT "bronies".* FROM "bronies" ORDER BY "bronies"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/bronies_controller.rb:26:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering bronies/new.html.erb within layouts/application
+  Rendered bronies/_form.html.erb (Duration: 12.9ms | Allocations: 6821)
+  Rendered bronies/new.html.erb within layouts/application (Duration: 25.9ms | Allocations: 7308)
+  Rendered layout layouts/application.html.erb (Duration: 50.7ms | Allocations: 11242)
+Completed 200 OK in 100ms (Views: 63.5ms | ActiveRecord: 0.7ms | Allocations: 19967)
+
+
+Started GET "/bronies/new" for 172.18.0.1 at 2021-04-14 14:00:14 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+SyntaxError (/usr/src/reserve_service/app/controllers/bronies_controller.rb:42: syntax error, unexpected tIDENTIFIER, expecting then or ';' or '\n'
+...e| if e.time_broby-Time.now>5 e.destroy}
+...                              ^):
+  
+app/controllers/bronies_controller.rb:42: syntax error, unexpected tIDENTIFIER, expecting then or ';' or '\n'
+app/controllers/bronies_controller.rb:42: syntax error, unexpected tIDENTIFIER, expecting then or ';' or '\n'
+app/controllers/bronies_controller.rb:42: syntax error, unexpected tIDENTIFIER, expecting then or ';' or '\n'
+Started GET "/bronies/new" for 172.18.0.1 at 2021-04-14 14:02:03 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+SyntaxError (/usr/src/reserve_service/app/controllers/bronies_controller.rb:42: syntax error, unexpected tIDENTIFIER, expecting then or ';' or '\n'
+...e| if e.time_broby-Time.now>5 e.destroy end}
+...                              ^
+/usr/src/reserve_service/app/controllers/bronies_controller.rb:42: syntax error, unexpected end, expecting '}'
+..._broby-Time.now>5 e.destroy end}
+...                            ^~~
+/usr/src/reserve_service/app/controllers/bronies_controller.rb:104: syntax error, unexpected end-of-input, expecting end):
+  
+app/controllers/bronies_controller.rb:42: syntax error, unexpected tIDENTIFIER, expecting then or ';' or '\n'
+app/controllers/bronies_controller.rb:42: syntax error, unexpected end, expecting '}'
+app/controllers/bronies_controller.rb:104: syntax error, unexpected end-of-input, expecting end
+app/controllers/bronies_controller.rb:42: syntax error, unexpected tIDENTIFIER, expecting then or ';' or '\n'
+app/controllers/bronies_controller.rb:42: syntax error, unexpected end, expecting '}'
+app/controllers/bronies_controller.rb:104: syntax error, unexpected end-of-input, expecting end
+app/controllers/bronies_controller.rb:42: syntax error, unexpected tIDENTIFIER, expecting then or ';' or '\n'
+app/controllers/bronies_controller.rb:42: syntax error, unexpected end, expecting '}'
+app/controllers/bronies_controller.rb:104: syntax error, unexpected end-of-input, expecting end
+Started GET "/bronies/new" for 172.18.0.1 at 2021-04-14 14:16:48 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+SyntaxError (/usr/src/reserve_service/app/controllers/bronies_controller.rb:42: syntax error, unexpected tIDENTIFIER, expecting then or ';' or '\n'
+...rams[:time_broby])-Time.now>5 e.destroy end}
+...                              ^
+/usr/src/reserve_service/app/controllers/bronies_controller.rb:42: syntax error, unexpected end, expecting '}'
+...roby])-Time.now>5 e.destroy end}
+...                            ^~~
+/usr/src/reserve_service/app/controllers/bronies_controller.rb:104: syntax error, unexpected end-of-input, expecting end):
+  
+app/controllers/bronies_controller.rb:42: syntax error, unexpected tIDENTIFIER, expecting then or ';' or '\n'
+app/controllers/bronies_controller.rb:42: syntax error, unexpected end, expecting '}'
+app/controllers/bronies_controller.rb:104: syntax error, unexpected end-of-input, expecting end
+app/controllers/bronies_controller.rb:42: syntax error, unexpected tIDENTIFIER, expecting then or ';' or '\n'
+app/controllers/bronies_controller.rb:42: syntax error, unexpected end, expecting '}'
+app/controllers/bronies_controller.rb:104: syntax error, unexpected end-of-input, expecting end
+app/controllers/bronies_controller.rb:42: syntax error, unexpected tIDENTIFIER, expecting then or ';' or '\n'
+app/controllers/bronies_controller.rb:42: syntax error, unexpected end, expecting '}'
+app/controllers/bronies_controller.rb:104: syntax error, unexpected end-of-input, expecting end
+Started GET "/entries" for 172.19.0.1 at 2021-04-16 10:39:19 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (14.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/entries"):
+  
+Started GET "/bronies" for 172.19.0.1 at 2021-04-16 10:39:51 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+SyntaxError (/usr/src/reserve_service/app/controllers/bronies_controller.rb:42: syntax error, unexpected tIDENTIFIER, expecting then or ';' or '\n'
+...rams[:time_broby])-Time.now>5 e.destroy end}
+...                              ^
+/usr/src/reserve_service/app/controllers/bronies_controller.rb:42: syntax error, unexpected end, expecting '}'
+...roby])-Time.now>5 e.destroy end}
+...                            ^~~
+/usr/src/reserve_service/app/controllers/bronies_controller.rb:104: syntax error, unexpected end-of-input, expecting end):
+  
+app/controllers/bronies_controller.rb:42: syntax error, unexpected tIDENTIFIER, expecting then or ';' or '\n'
+app/controllers/bronies_controller.rb:42: syntax error, unexpected end, expecting '}'
+app/controllers/bronies_controller.rb:104: syntax error, unexpected end-of-input, expecting end
+app/controllers/bronies_controller.rb:42: syntax error, unexpected tIDENTIFIER, expecting then or ';' or '\n'
+app/controllers/bronies_controller.rb:42: syntax error, unexpected end, expecting '}'
+app/controllers/bronies_controller.rb:104: syntax error, unexpected end-of-input, expecting end
+app/controllers/bronies_controller.rb:42: syntax error, unexpected tIDENTIFIER, expecting then or ';' or '\n'
+app/controllers/bronies_controller.rb:42: syntax error, unexpected end, expecting '}'
+app/controllers/bronies_controller.rb:104: syntax error, unexpected end-of-input, expecting end
+Started GET "/bronies" for 172.19.0.1 at 2021-04-16 10:41:18 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+SyntaxError (/usr/src/reserve_service/app/controllers/bronies_controller.rb:42: syntax error, unexpected tIDENTIFIER, expecting then or ';' or '\n'
+...rams[:time_broby])-Time.now>5 e.destroy end}
+...                              ^
+/usr/src/reserve_service/app/controllers/bronies_controller.rb:42: syntax error, unexpected end, expecting '}'
+...roby])-Time.now>5 e.destroy end}
+...                            ^~~
+/usr/src/reserve_service/app/controllers/bronies_controller.rb:104: syntax error, unexpected end-of-input, expecting end):
+  
+app/controllers/bronies_controller.rb:42: syntax error, unexpected tIDENTIFIER, expecting then or ';' or '\n'
+app/controllers/bronies_controller.rb:42: syntax error, unexpected end, expecting '}'
+app/controllers/bronies_controller.rb:104: syntax error, unexpected end-of-input, expecting end
+app/controllers/bronies_controller.rb:42: syntax error, unexpected tIDENTIFIER, expecting then or ';' or '\n'
+app/controllers/bronies_controller.rb:42: syntax error, unexpected end, expecting '}'
+app/controllers/bronies_controller.rb:104: syntax error, unexpected end-of-input, expecting end
+app/controllers/bronies_controller.rb:42: syntax error, unexpected tIDENTIFIER, expecting then or ';' or '\n'
+app/controllers/bronies_controller.rb:42: syntax error, unexpected end, expecting '}'
+app/controllers/bronies_controller.rb:104: syntax error, unexpected end-of-input, expecting end
+Started GET "/bronies" for 172.19.0.1 at 2021-04-16 10:44:49 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BroniesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bronies/index.html.erb within layouts/application
+  [1m[36mBrony Load (0.4ms)[0m  [1m[34mSELECT "bronies".* FROM "bronies"[0m
+  ↳ app/views/bronies/index.html.erb:16
+  Rendered bronies/index.html.erb within layouts/application (Duration: 24.3ms | Allocations: 4775)
+  Rendered layout layouts/application.html.erb (Duration: 97.3ms | Allocations: 9083)
+Completed 200 OK in 165ms (Views: 102.1ms | ActiveRecord: 0.4ms | Allocations: 12647)
+
+
+Started GET "/bronies/1" for 172.19.0.1 at 2021-04-16 10:44:55 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BroniesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBrony Load (0.3ms)[0m  [1m[34mSELECT "bronies".* FROM "bronies" WHERE "bronies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bronies_controller.rb:92:in `set_brony'
+Completed 404 Not Found in 118ms (ActiveRecord: 1.3ms | Allocations: 2507)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Brony with 'id'=1):
+  
+app/controllers/bronies_controller.rb:92:in `set_brony'
+Started GET "/bronies" for 172.19.0.1 at 2021-04-16 10:44:59 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BroniesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bronies/index.html.erb within layouts/application
+  [1m[36mBrony Load (0.3ms)[0m  [1m[34mSELECT "bronies".* FROM "bronies"[0m
+  ↳ app/views/bronies/index.html.erb:16
+  Rendered bronies/index.html.erb within layouts/application (Duration: 5.4ms | Allocations: 928)
+  Rendered layout layouts/application.html.erb (Duration: 12.5ms | Allocations: 2482)
+Completed 200 OK in 14ms (Views: 13.2ms | ActiveRecord: 0.3ms | Allocations: 2876)
+
+
+Started GET "/bronies/new" for 172.19.0.1 at 2021-04-16 10:45:06 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BroniesController#new as HTML
+  [1m[36mBrony Load (0.3ms)[0m  [1m[34mSELECT "bronies".* FROM "bronies" ORDER BY "bronies"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/bronies_controller.rb:25:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering bronies/new.html.erb within layouts/application
+  Rendered bronies/_form.html.erb (Duration: 164.6ms | Allocations: 8490)
+  Rendered bronies/new.html.erb within layouts/application (Duration: 167.0ms | Allocations: 8864)
+  Rendered layout layouts/application.html.erb (Duration: 177.6ms | Allocations: 10409)
+Completed 200 OK in 221ms (Views: 182.4ms | ActiveRecord: 0.3ms | Allocations: 15964)
+
+
+Started POST "/bronies" for 172.19.0.1 at 2021-04-16 10:45:16 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BroniesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "brony"=>{"id_ticket"=>"1", "number_brony"=>"1", "time_broby(1i)"=>"2000", "time_broby(2i)"=>"1", "time_broby(3i)"=>"1", "time_broby(4i)"=>"10", "time_broby(5i)"=>"45"}, "commit"=>"Create Brony"}
+  [1m[36mBrony Load (0.2ms)[0m  [1m[34mSELECT "bronies".* FROM "bronies" ORDER BY "bronies"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/bronies_controller.rb:43:in `create'
+[31mUnpermitted parameters: :authenticity_token, :brony, :commit[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/bronies_controller.rb:52:in `block in create'
+  [1m[36mBrony Create (0.5ms)[0m  [1m[32mINSERT INTO "bronies" ("id_ticket", "number_brony", "time_broby", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["id_ticket", 96], ["number_brony", 1], ["time_broby", "2000-01-01 10:45:16.314128"], ["created_at", "2021-04-16 10:45:16.314846"], ["updated_at", "2021-04-16 10:45:16.314846"]]
+  ↳ app/controllers/bronies_controller.rb:52:in `block in create'
+  [1m[36mTRANSACTION (193.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/bronies_controller.rb:52:in `block in create'
+Redirected to http://localhost:8160/bronies/1
+Completed 500 Internal Server Error in 225ms (ActiveRecord: 194.5ms | Allocations: 6360)
+
+
+  
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  
+app/controllers/bronies_controller.rb:61:in `create'
+Started GET "/bronies" for 172.19.0.1 at 2021-04-16 10:47:10 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BroniesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bronies/index.html.erb within layouts/application
+  [1m[36mBrony Load (0.4ms)[0m  [1m[34mSELECT "bronies".* FROM "bronies"[0m
+  ↳ app/views/bronies/index.html.erb:16
+  Rendered bronies/index.html.erb within layouts/application (Duration: 37.9ms | Allocations: 5457)
+  Rendered layout layouts/application.html.erb (Duration: 50.5ms | Allocations: 9386)
+Completed 200 OK in 70ms (Views: 53.4ms | ActiveRecord: 1.5ms | Allocations: 12297)
+
+
+Started GET "/bronies/new" for 172.19.0.1 at 2021-04-16 10:47:14 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BroniesController#new as HTML
+  [1m[36mBrony Load (0.4ms)[0m  [1m[34mSELECT "bronies".* FROM "bronies" ORDER BY "bronies"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/bronies_controller.rb:25:in `new'
+  [1m[36mCACHE Brony Load (0.2ms)[0m  [1m[34mSELECT "bronies".* FROM "bronies" ORDER BY "bronies"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/bronies_controller.rb:28:in `new'
+Completed 500 Internal Server Error in 43ms (ActiveRecord: 0.5ms | Allocations: 3501)
+
+
+  
+NoMethodError (private method `select' called for #<Brony:0x000055683b54ed38>):
+  
+app/controllers/bronies_controller.rb:28:in `new'
+Started GET "/bronies" for 172.19.0.1 at 2021-04-16 10:47:21 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BroniesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bronies/index.html.erb within layouts/application
+  [1m[36mBrony Load (0.2ms)[0m  [1m[34mSELECT "bronies".* FROM "bronies"[0m
+  ↳ app/views/bronies/index.html.erb:16
+  Rendered bronies/index.html.erb within layouts/application (Duration: 8.0ms | Allocations: 1087)
+  Rendered layout layouts/application.html.erb (Duration: 12.0ms | Allocations: 2641)
+Completed 200 OK in 15ms (Views: 13.9ms | ActiveRecord: 0.2ms | Allocations: 3034)
+
+

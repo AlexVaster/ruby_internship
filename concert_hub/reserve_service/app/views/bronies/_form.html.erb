@@ -1,0 +1,32 @@
+<%= form_with(model: brony) do |form| %>
+  <% if brony.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(brony.errors.count, "error") %> prohibited this brony from being saved:</h2>
+
+      <ul>
+        <% brony.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :id_ticket %>
+    <%= form.number_field :id_ticket %>
+  </div>
+
+  <div class="field">
+    <%= form.label :number_brony %>
+    <%= form.number_field :number_brony %>
+  </div>
+
+  <div class="field">
+    <%= form.label :time_broby %>
+    <%= form.time_select :time_broby %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

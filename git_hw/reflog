@@ -1,0 +1,22 @@
+7a9b31c HEAD@{0}: merge 7a9b31c: Fast-forward
+e35126d HEAD@{1}: checkout: moving from 7a9b31cef546488803552810709520e21b5a777c to master
+7a9b31c HEAD@{2}: rebase: Переименовал компьютер в робота
+e35126d HEAD@{3}: rebase: checkout master
+84d4eea HEAD@{4}: checkout: moving from master to 84d4eea
+e35126d HEAD@{5}: merge output_names: Fast-forward
+1d7063f HEAD@{6}: checkout: moving from output_names to master
+e35126d HEAD@{7}: rebase -i (finish): returning to refs/heads/output_names
+e35126d HEAD@{8}: rebase -i (squash): Добавим вывод человеческих названий выбранных вариантов
+7eee22e HEAD@{9}: rebase -i (pick): Добавим вывод человеческих названий выбранных вариантов
+1d7063f HEAD@{10}: rebase -i (start): checkout master
+6b9b22c HEAD@{11}: checkout: moving from master to output_names
+1d7063f HEAD@{12}: merge user_interaction: Fast-forward
+fafcdd4 HEAD@{13}: checkout: moving from user_interaction to master
+1d7063f HEAD@{14}: checkout: moving from master to user_interaction
+fafcdd4 HEAD@{15}: checkout: moving from user_interaction to master
+1d7063f HEAD@{16}: rebase finished: returning to refs/heads/user_interaction
+1d7063f HEAD@{17}: rebase: Разбил приглашение к вводу на несколько строк
+f76d4db HEAD@{18}: rebase: Добавил взаимодествие с пользователем
+fafcdd4 HEAD@{19}: rebase: checkout master
+00205e6 HEAD@{20}: checkout: moving from master to user_interaction
+fafcdd4 HEAD@{21}: clone: from https://gitlab.w55.ru/internship/git_hw/
